@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taverna Delivery</title>
+    <!-- Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript -->
+    <script src="loja/script.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="loja/styles.css">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-container">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="box-center">
+                    <li class="link-center"><a href="#home">Home</a></li>
+                    <li id="link-center"><a href="#">Cardápio</a>
+                    <ul id="link-cardapio">
+                        <a href="#acai">Açaí</a>
+                        <a href="#tapioca">Tapioca</a>
+                        <a href="#bolo">Bolo</a>
+                    </ul>
+                </li>
+                    <li class="link-center"><a href="#fazer-pedido">Fazer Pedido</a></li>
+                    <li class="link-center"><a href="#sobre">Sobre Nós</a></li>
+                    <li class="link-center"><a href="#contato">Contato</a></li>
+                </ul>
+                <ul class="box-rigth">
+                    <li class="link-carrinho"><a href="#carrinho">Carrinho</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h1>Bem-vindo à Taverna Delivery</h1>
+            <p>O melhor açaí, bolo e tapioca da cidade, entregues diretamente na sua casa!</p>
+        </section>
+        <section id="cardapio" class="container">
+            <h2>Cardápio</h2>
+            <div class="cardapio">
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=A%C3%A7a%C3%AD+Cl%C3%A1ssico"
+                        alt="Açaí Clássico">
+                    <h3>Açaí Clássico</h3>
+                    <p>Delicioso açaí com granola, banana e mel.</p>
+                    <p>R$ 15,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-acai">Avalie:</label>
+                        <select id="avaliacao-acai" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Açaí Clássico" data-preco="15.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=A%C3%A7a%C3%AD+Cl%C3%A1ssico"
+                        alt="Açaí Clássico">
+                    <h3>Açaí Clássico</h3>
+                    <p>Delicioso açaí com granola, banana e mel.</p>
+                    <p>R$ 15,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-acai">Avalie:</label>
+                        <select id="avaliacao-acai" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Açaí Clássico" data-preco="15.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=A%C3%A7a%C3%AD+Cl%C3%A1ssico"
+                        alt="Açaí Clássico">
+                    <h3>Açaí Clássico</h3>
+                    <p>Delicioso açaí com granola, banana e mel.</p>
+                    <p>R$ 15,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-acai">Avalie:</label>
+                        <select id="avaliacao-acai" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Açaí Clássico" data-preco="15.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=A%C3%A7a%C3%AD+Cl%C3%A1ssico"
+                        alt="Açaí Clássico">
+                    <h3>Açaí Clássico</h3>
+                    <p>Delicioso açaí com granola, banana e mel.</p>
+                    <p>R$ 15,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-acai">Avalie:</label>
+                        <select id="avaliacao-acai" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Açaí Clássico" data-preco="15.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=A%C3%A7a%C3%AD+Cl%C3%A1ssico"
+                        alt="Açaí Clássico">
+                    <h3>Açaí Clássico</h3>
+                    <p>Delicioso açaí com granola, banana e mel.</p>
+                    <p>R$ 15,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-acai">Avalie:</label>
+                        <select id="avaliacao-acai" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Açaí Clássico" data-preco="15.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=A%C3%A7a%C3%AD+Cl%C3%A1ssico"
+                        alt="Açaí Clássico">
+                    <h3>Açaí Clássico</h3>
+                    <p>Delicioso açaí com granola, banana e mel.</p>
+                    <p>R$ 15,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-acai">Avalie:</label>
+                        <select id="avaliacao-acai" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Açaí Clássico" data-preco="15.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=A%C3%A7a%C3%AD+Cl%C3%A1ssico"
+                        alt="Açaí Clássico">
+                    <h3>Açaí Clássico</h3>
+                    <p>Delicioso açaí com granola, banana e mel.</p>
+                    <p>R$ 15,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-acai">Avalie:</label>
+                        <select id="avaliacao-acai" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Açaí Clássico" data-preco="15.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=A%C3%A7a%C3%AD+Cl%C3%A1ssico"
+                        alt="Açaí Clássico">
+                    <h3>Açaí Clássico</h3>
+                    <p>Delicioso açaí com granola, banana e mel.</p>
+                    <p>R$ 15,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-acai">Avalie:</label>
+                        <select id="avaliacao-acai" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Açaí Clássico" data-preco="15.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+            </div>
+        </section>
+        <!-- Seção de Vídeo -->
+        <section id="video" class="video-container">
+            <h2>Assista nossa produção!</h2>
+            <iframe src="https://www.youtube.com/embed/SeuVideoID" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section id="cardapio" class="container">
+            <h2>Cardápio</h2>
+            <div class="cardapio">
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Tapioca+Chocolate" alt="Tapioca Chocolate">
+                    <h3>Tapioca Chocolate</h3>
+                    <p>Tapioca recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-tapioca">Avalie:</label>
+                        <select id="avaliacao-tapioca" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Tapioca Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Tapioca+Chocolate" alt="Tapioca Chocolate">
+                    <h3>Tapioca Chocolate</h3>
+                    <p>Tapioca recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-tapioca">Avalie:</label>
+                        <select id="avaliacao-tapioca" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Tapioca Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Tapioca+Chocolate" alt="Tapioca Chocolate">
+                    <h3>Tapioca Chocolate</h3>
+                    <p>Tapioca recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-tapioca">Avalie:</label>
+                        <select id="avaliacao-tapioca" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Tapioca Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Tapioca+Chocolate" alt="Tapioca Chocolate">
+                    <h3>Tapioca Chocolate</h3>
+                    <p>Tapioca recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-tapioca">Avalie:</label>
+                        <select id="avaliacao-tapioca" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Tapioca Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Tapioca+Chocolate" alt="Tapioca Chocolate">
+                    <h3>Tapioca Chocolate</h3>
+                    <p>Tapioca recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-tapioca">Avalie:</label>
+                        <select id="avaliacao-tapioca" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Tapioca Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Tapioca+Chocolate" alt="Tapioca Chocolate">
+                    <h3>Tapioca Chocolate</h3>
+                    <p>Tapioca recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-tapioca">Avalie:</label>
+                        <select id="avaliacao-tapioca" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Tapioca Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Tapioca+Chocolate" alt="Tapioca Chocolate">
+                    <h3>Tapioca Chocolate</h3>
+                    <p>Tapioca recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-tapioca">Avalie:</label>
+                        <select id="avaliacao-tapioca" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Tapioca Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Tapioca+Chocolate" alt="Tapioca Chocolate">
+                    <h3>Tapioca Chocolate</h3>
+                    <p>Tapioca recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-tapioca">Avalie:</label>
+                        <select id="avaliacao-tapioca" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Tapioca Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+            </div>
+        </section>
+        <!-- Seção de Fazer um Pedido -->
+        <section id="fazer-pedido" class="container">
+            <h2>Faça Seu Pedido</h2>
+            <div class="pedido-form">
+                <form action="#">
+                    <label for="nome"></label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                    <label for="telefone"></label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone" required>
+                    <label for="pedido"></label>
+                    <textarea id="pedido" name="pedido" rows="4" placeholder="Seu Pedido..." required></textarea>
+                    <button type="submit">Enviar Pedido</button>
+                </form>
+            </div>
+        </section>
+        <section id="cardapio" class="container">
+            <h2>Cardápio</h2>
+            <div class="cardapio">
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Bolo+Chocolate" alt="Bolo Chocolate">
+                    <h3>Bolo Chocolate</h3>
+                    <p>Bolo recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-bolo">Avalie:</label>
+                        <select id="avaliacao-bolo" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Bolo Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Bolo+Chocolate" alt="Bolo Chocolate">
+                    <h3>Bolo Chocolate</h3>
+                    <p>Bolo recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-bolo">Avalie:</label>
+                        <select id="avaliacao-bolo" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Bolo Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Bolo+Chocolate" alt="Bolo Chocolate">
+                    <h3>Bolo Chocolate</h3>
+                    <p>Bolo recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-bolo">Avalie:</label>
+                        <select id="avaliacao-bolo" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Bolo Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Bolo+Chocolate" alt="Bolo Chocolate">
+                    <h3>Bolo Chocolate</h3>
+                    <p>Bolo recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-bolo">Avalie:</label>
+                        <select id="avaliacao-bolo" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Bolo Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Bolo+Chocolate" alt="Bolo Chocolate">
+                    <h3>Bolo Chocolate</h3>
+                    <p>Bolo recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-bolo">Avalie:</label>
+                        <select id="avaliacao-bolo" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Bolo Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Bolo+Chocolate" alt="Bolo Chocolate">
+                    <h3>Bolo Chocolate</h3>
+                    <p>Bolo recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-bolo">Avalie:</label>
+                        <select id="avaliacao-bolo" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Bolo Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Bolo+Chocolate" alt="Bolo Chocolate">
+                    <h3>Bolo Chocolate</h3>
+                    <p>Bolo recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-bolo">Avalie:</label>
+                        <select id="avaliacao-bolo" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Bolo Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/300x200.png?text=Bolo+Chocolate" alt="Bolo Chocolate">
+                    <h3>Bolo Chocolate</h3>
+                    <p>Bolo recheada com chocolate derretido.</p>
+                    <p>R$ 10,00</p>
+                    <div class="avaliacao">
+                        <label for="avaliacao-bolo">Avalie:</label>
+                        <select id="avaliacao-bolo" name="avaliacao">
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="1">⭐</option>
+                        </select>
+                    </div>
+                    <button class="adicionar-carrinho" data-item="Bolo Chocolate" data-preco="10.00">Adicionar ao
+                        Carrinho</button>
+                </div>
+            </div>
+        </section>
+        <!-- Seção de Feedback -->
+        <section id="feedback" class="container">
+            <h2>Feedback</h2>
+            <form action="#" method="post">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem..." rows="4" required></textarea>
+                <button type="submit">Enviar Feedback</button>
+            </form>
+        </section>
+        <section id="sobre" class="container">
+            <h2>Sobre Nós</h2>
+            <p>Na Taverna Delivery, nossa missão é proporcionar a melhor experiência gastronômica com nossos deliciosos
+                açaís e bolos. Utilizamos apenas ingredientes frescos e de alta qualidade para garantir o sabor e a
+                satisfação dos nossos clientes.</p>
+        </section>
+        <section id="contato" class="container">
+            <h2>Contato</h2>
+            <p>Tem alguma dúvida ou sugestão? <strong class="duvida">Entre em contato conosco!</strong></p>
+            <p><i class="fas fa-envelope"></i> Email: contato@tavernadelivery.com</p>
+            <p><i class="fas fa-phone"></i> Telefone: (11) 1234-5678</p>
+        </section>
+        <section id="carrinho" class="container">
+            <h2>Carrinho de Compras</h2>
+            <div id="carrinho-lista">
+                <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+            </div>
+            <div class="forma-pagamento">
+                <h3>Forma de Pagamento</h3>
+                <select id="pagamento" name="pagamento">
+                    <option class="opcoes" value="cartao">Cartão de Crédito/Débito</option>
+                    <option class="opcoes" value="boleto">Boleto Bancário</option>
+                    <option class="opcoes" value="pix">PIX</option>
+                </select>
+            </div>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p>&copy; 2024 Taverna Delivery. Todos os direitos reservados.</p>
+            <p><a href="#home">Voltar ao topo</a></p>
+            <p>Endereço: Rua Exemplo, 123, Natal, RN</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
